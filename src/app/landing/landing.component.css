@@ -1,0 +1,77 @@
+.custom-navbar {
+  background-color: #fe5240 !important;
+}
+
+.challenge-caption-text {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.duration {
+  font-size: 13px;
+}
+
+.welcome-challenge {
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+.challenge-progress {
+  fill: #ffb03a;
+  fill-opacity: 0.3;
+}
+
+.img-overlay-wrap {
+  position: relative;
+  display: inline-block;
+  /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+.img-overlay-wrap img {
+  /* <= optional, for responsiveness */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.challenge-progress-text {
+  fill: #ebf4f4;
+  font-size: 12px;
+}
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+#perc {
+  color: white;
+  border: 3px solid green;
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 20%;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}

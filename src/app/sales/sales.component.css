@@ -1,0 +1,10 @@
+input,
+select,
+textarea {
+  width: 230px;
+  border: 1px solid #ccc;
+  -ms-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}

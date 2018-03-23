@@ -1,0 +1,49 @@
+<div class="container">
+  <h1 class="text-center text-lg-center welcome-challenge">Bienvenido! Elija una opcion para empezar</h1>
+  <div class="row text-center text-lg-left">
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a [routerLink]="['/sales']" class="img-overlay-wrap">
+          <img class="card-img-top" src="../../assets/placeholder.png" alt="Ventas">
+          <svg viewBox="0 0 200 200">
+            <!-- <rect [attr.width]="challengeWidthAmerican" height="110" class="challenge-progress" /> -->
+            <text id="perc" x="85" y="120" class="challenge-progress-text">Ventas</text>
+          </svg>
+        </a>
+        <div class="card-body">
+          <p class="card-text challenge-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a [routerLink]="['/orders']" class="img-overlay-wrap">
+          <img class="card-img-top" src="../../assets/placeholder.png" alt="Pedidos">
+          <svg viewBox="0 0 200 200">
+            <!-- <rect [attr.width]="challengeWidthItalian" height="110" class="challenge-progress" /> -->
+            <text id="perc" x="85" y="120" class="challenge-progress-text">Pedidos</text>
+          </svg>
+        </a>
+        <div class="card-body">
+          <p class="card-text challenge-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a [routerLink]="['/businesses', 'mexican']" class="img-overlay-wrap">
+          <img class="card-img-top" src="../../assets/placeholder.png" alt="Util">
+          <svg viewBox="0 0 200 200">
+            <!-- <rect [attr.width]="challengeWidthMexican" height="110" class="challenge-progress" /> -->
+            <text id="perc" x="85" y="120" class="challenge-progress-text">Util</text>
+          </svg>
+        </a>
+        <div class="card-body">
+          <p class="card-text challenge-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
