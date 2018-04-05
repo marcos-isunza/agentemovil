@@ -12,6 +12,8 @@ import { Http, HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { Service } from './service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SetupComponent } from './setup/setup.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -20,16 +22,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     LandingComponent,
     SalesComponent,
-    OrdersComponent
+    OrdersComponent,
+    SetupComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'landing', component: LandingComponent },
+      { path: 'menu', component: LandingComponent },
       { path: 'sales', component: SalesComponent },
       { path: 'orders', component: OrdersComponent },
+      { path: 'config', component: SetupComponent },
+      { path: 'signup', component: SignupComponent },
       { path: ' ', redirectTo: 'home', pathMatch: 'full' },
       { path: '**', redirectTo: 'home', pathMatch: 'full' }
     ]),

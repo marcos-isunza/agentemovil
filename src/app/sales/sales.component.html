@@ -3,33 +3,74 @@
     <a [routerLink]="['/home']">Home</a>
   </li>
   <li class="breadcrumb-item">
-    <a [routerLink]="['/landing']">Menu</a>
+    <a [routerLink]="['/menu']">Menu</a>
   </li>
   <li class="breadcrumb-item active">Ventas</li>
 </ol>
 
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Busqueda</h4>
+      <br>
+      <div class="select-op">
+        <select class="custom-select">
+          <option selected>-- Periodo --</option>
+          <option value="actual">Mes Actual</option>
+          <option value="anterior">Mes Anterior</option>
+        </select>
+      </div>
+      <div class="select-op">
+        <select class="custom-select">
+          <option selected>-- Zona --</option>
+          <option value="zona_n">Zona Norte</option>
+          <option value="zona_s">Zona Sur</option>
+          <option value="zona_c">>Zona Centro</option>
+          <option value="zona_a">Zona Autoservicio</option>
+        </select>
+      </div>
+      <div class="select-op">
+        <select class="custom-select">
+          <option selected>-- Vendedores --</option>
+          <option value="v_1">Vendedor 1</option>
+        </select>
+      </div>
+    </div>
 
-<div class="row">
-  <div class="col-3 mx-auto">
-    <div class="nauk-info-connections text-center">
-      <select class="custom-select">
-        <option selected>Periodo</option>
-        <option value="actual">Mes Actual</option>
-        <option value="anterior">Mes Anterior</option>
-      </select>
+    <div class="col-sm-9">
+      <h4>
+        <small>Resumen de Ventas</small>
+      </h4>
       <hr>
-      <select class="custom-select">
-        <option selected>Zona</option>
-        <option value="zona_n">Zona Norte</option>
-        <option value="zona_s">Zona Sur</option>
-        <option value="zona_c">>Zona Centro</option>
-        <option value="zona_a">Zona Autoservicio</option>
-      </select>
-      <hr>
-      <select class="custom-select">
-        <option selected>Vendedores</option>
-        <option value="v_1">Vendedor 1</option>
-      </select>
+      <br>
+      <div class="divTable table">
+        <div class="divTableBody">
+          <div class="divTableRow">
+            <div class="divTableCell">
+              <strong>Ventas</strong>
+            </div>
+            <div class="divTableCell">
+              <strong>Devoluciones</strong>
+            </div>
+            <div class="divTableCell">
+              <strong>Venta Real</strong>
+            </div>
+            <div class="divTableCell">
+              <strong>Facturas Saldadas</strong>
+            </div>
+            <div class="divTableCell">
+              <strong>Pagos</strong>
+            </div>
+          </div>
+          <div class="divTableRow">
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+      <!-- DivTable.com -->
     </div>
   </div>
-</div>

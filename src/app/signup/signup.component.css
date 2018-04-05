@@ -24,14 +24,13 @@
   margin: 0 0 15px;
   position: relative;
   text-align: center;
-  font-size: 22px;
 }
 
 .signup-form h2:before,
 .signup-form h2:after {
   content: '';
   height: 2px;
-  width: 10%;
+  width: 30%;
   background: #d4d4d4;
   position: absolute;
   top: 50%;

@@ -16,6 +16,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   font-weight: normal;
+  color: #d9e5f1;
 }
 
 .challenge-progress {
@@ -45,7 +46,8 @@
 
 .challenge-progress-text {
   fill: #ebf4f4;
-  font-size: 12px;
+  text-shadow: 2px 2px #504a4a;
+  font-size: 18px;
 }
 
 body {
@@ -74,4 +76,8 @@ body {
 
 .portfolio-item {
   margin-bottom: 30px;
+}
+
+.card-body {
+  background: #d9e5f1;
 }

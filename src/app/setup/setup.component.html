@@ -1,0 +1,45 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a [routerLink]="['/home']">Home</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a [routerLink]="['/menu']">Menu</a>
+  </li>
+  <li class="breadcrumb-item active">Config</li>
+</ol>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-12">
+      <h4>Actualizar Informacion</h4>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary" (click)="toggle(1)">Existencias</button>
+      <button type="button" class="btn btn-secondary" (click)="toggle(2)">Pedidos</button>
+      <button type="button" class="btn btn-secondary" (click)="toggle(3)">Ventas</button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="showExistence">
+  <div class="row content">
+    <div class="col-sm-12">
+      <p>Editar Existencias</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="showOrders">
+  <div class="row content">
+    <div class="col-sm-12">
+      <p>Editar Ordenes</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="showSales">
+  <div class="row content">
+    <div class="col-sm-12">
+      <p>Editar Ventas</p>
+    </div>
+  </div>
+</div>
